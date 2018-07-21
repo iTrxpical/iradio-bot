@@ -178,8 +178,12 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
             .addField('End:', timef)
 
         var npChannel = client.channels.get('469856449003257876');
+	    
+	var npChannel2 = client.channels.get('470187014621495306');
 
         npChannel.send(startEmbed);
+	    
+	npChannel2.send(startEmbed);
 
         var guild = client.guilds.get('469209727688114196');
 
@@ -209,8 +213,12 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
             .addField('End:', timefe)
 
         var npChannel = client.channels.get('469856449003257876');
+	    
+	var npChannel2 = client.channels.get('470187014621495306');
 
         npChannel.send(endEmbed);
+	    
+	npChannel2.send(endEmbed);
 
         var guild = client.guilds.get('469209727688114196');
 
